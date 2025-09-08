@@ -50,4 +50,13 @@
 }
 .project:hover{ transform: translateY(-2px); box-shadow:0 16px 40px rgba(0,0,0,.35); }
 .project .title{font-weight:700; font-size:18px;}
-.project .desc{color:var(--muted);}
+.project .desc{color:var(--muted);
+
+}
+
+.project img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
