@@ -54,4 +54,5 @@ img{display:block; max-width:100%;}
 h1,h2,h3{margin:0 0 12px;}
 h1{font-size:42px; line-height:1.1; letter-spacing:.3px;}
 h2{font-size:28px;}
-p{color:var(--m
+p{color:var(--muted); line-height:1.6; margin:0;
+}
