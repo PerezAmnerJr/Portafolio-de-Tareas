@@ -12,7 +12,6 @@ const Navbar: React.FC = () => {
           <a href="#home">Home</a>
           <a href="#projects">Proyectos</a>
           <a href="#glosario">Glosario</a>
-          <a href="#resume">Resume</a>
         </nav>
       </div>
     </header>
