@@ -6,8 +6,8 @@ const Hero: React.FC = () => {
       <div className="container card hero">
         <div className="left">
           <div className="kicker">Hola, soy</div>
-          <h1>Ing. Amner Alberto</h1>
-          <h2 style={{color:"var(--accent)"}}>Frontend Developer</h2>
+          <h1>Tu Nombre</h1>
+          <h2 style={{color:"var(--accent)"}}>UI/UX & Frontend Developer</h2>
           <p style={{marginTop:10, maxWidth:560}}>
             Breve descripción sobre ti. Mantén 2–3 líneas: en qué te especializas, 
             tu stack favorito y el tipo de proyectos que te apasionan.
@@ -18,11 +18,17 @@ const Hero: React.FC = () => {
             <a className="btn" href="#contacto">Hablemos</a>
           </div>
 
+          <div className="pills">
+            <span className="badge">Figma</span>
+            <span className="badge">React</span>
+            <span className="badge">TypeScript</span>
+            <span className="badge">CSS</span>
+          </div>
         </div>
 
         <div className="right">
           <div className="photo">
-            <img src="/Img perfil.jpg" alt="Foto de perfil" />
+            <img src="/profile.jpg" alt="Foto de perfil" />
           </div>
         </div>
       </div>
