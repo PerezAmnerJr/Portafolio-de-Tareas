@@ -9,8 +9,7 @@ const Hero: React.FC = () => {
           <h1>Ing Amner Alberto</h1>
           <h2 style={{color:"var(--accent)"}}>Desarrollador Frontend</h2>
           <p style={{marginTop:10, maxWidth:560}}>
-            Breve descripción sobre ti. Mantén 2–3 líneas: en qué te especializas, 
-            tu stack favorito y el tipo de proyectos que te apasionan.
+            Cuanto mas estudio, mas insaciable siento que es mi genio
           </p>
 
           <div className="ctas">
