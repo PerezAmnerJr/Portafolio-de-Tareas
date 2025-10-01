@@ -6,8 +6,8 @@ const Hero: React.FC = () => {
       <div className="container card hero">
         <div className="left">
           <div className="kicker">Hola, soy</div>
-          <h1>Tu Nombre</h1>
-          <h2 style={{color:"var(--accent)"}}>UI/UX & Frontend Developer</h2>
+          <h1>Ing Amner Alberto</h1>
+          <h2 style={{color:"var(--accent)"}}>Desarrollador Frontend</h2>
           <p style={{marginTop:10, maxWidth:560}}>
             Breve descripción sobre ti. Mantén 2–3 líneas: en qué te especializas, 
             tu stack favorito y el tipo de proyectos que te apasionan.
