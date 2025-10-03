@@ -1,5 +1,5 @@
 import React from "react";
-import perfilImg from "../assets/perfil.jpg"; // 👈 importa la imagen
+import perfilImg from "../assets/perfil.jpg"; // 👈 IMPORTA la imagen
 
 const Hero: React.FC = () => {
   return (
@@ -13,7 +13,6 @@ const Hero: React.FC = () => {
             Soy Amner Perez, estudiante de Ingeniería en Sistemas en octavo semestre,
             apasionado por la tecnología y en constante aprendizaje.
           </p>
-
           <div className="ctas">
             <a className="btn btn--accent" href="#projects">Ver Proyectos</a>
             <a className="btn" href="#contacto">Hablemos</a>
