@@ -8,13 +8,13 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "p1",
-    title: "Proyecto 1",
+    title: "Hoja de Vida",
     description: "Descripción corta del proyecto 1 (qué resuelve, tech, etc.).",
     url: "https://TU-PRIMER-SITIO.netlify.app"
   },
   {
     id: "p2",
-    title: "Proyecto 2",
+    title: "Formulario",
     description: "Descripción corta del proyecto 2.",
     url: "https://TU-SEGUNDO-SITIO.netlify.app"
   },
