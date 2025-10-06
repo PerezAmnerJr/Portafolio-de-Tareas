@@ -1,23 +1,4 @@
-Mi hoja de vida-React
-eact.js – Biblioteca principal para la interfaz.
 
-Create React App – Herramienta para crear el proyecto.
-
-React Bootstrap 5 – Componentes de UI responsivos.
-
-Bootstrap 5 – Estilos y estructura general del diseño.
-
-React Icons – Íconos vectoriales para redes sociales y secciones.
-
-HTML5 & CSS3 – Estructura base y estilos personalizados.
-
-JavaScript (ES6+) – Lógica y manipulación de componentes.
-
-Git & GitHub – Control de versiones y repositorio remoto.
-
-Vercel – Plataforma de despliegue gratuito.
-
-Animaciones CSS – Transiciones, efectos de fade-in, blur y hover.
 
 
 
