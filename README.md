@@ -1,10 +1,4 @@
 Mi hoja de vida-React
-
-Este proyecto fue generado con Create React App y está diseñado para presentar mi hoja de vida profesional de forma moderna e interactiva.
-
-
-
-🚀 Tecnologías Utilizadas
 eact.js – Biblioteca principal para la interfaz.
 
 Create React App – Herramienta para crear el proyecto.
