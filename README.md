@@ -1,11 +1,31 @@
-# React + TypeScript + Vite
+Mi hoja de vida-React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue generado con Create React App y está diseñado para presentar mi hoja de vida profesional de forma moderna e interactiva.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+🚀 Tecnologías Utilizadas
+eact.js – Biblioteca principal para la interfaz.
+
+Create React App – Herramienta para crear el proyecto.
+
+React Bootstrap 5 – Componentes de UI responsivos.
+
+Bootstrap 5 – Estilos y estructura general del diseño.
+
+React Icons – Íconos vectoriales para redes sociales y secciones.
+
+HTML5 & CSS3 – Estructura base y estilos personalizados.
+
+JavaScript (ES6+) – Lógica y manipulación de componentes.
+
+Git & GitHub – Control de versiones y repositorio remoto.
+
+Vercel – Plataforma de despliegue gratuito.
+
+Animaciones CSS – Transiciones, efectos de fade-in, blur y hover.
+
+
 
 ## Expanding the ESLint configuration
 
