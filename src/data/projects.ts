@@ -29,11 +29,34 @@ export const projects: Project[] = [
   },
   {
     id: "p3",
-    title: "Proyecto 3",
-    description: "Descripción corta del proyecto 3 (qué resuelve, tech, etc.).",
-    image: "/otro-preview.jpg",
-    netlify: "https://TU-PROY3.netlify.app",
-    github: "https://github.com/TUUSER/TU-REPO-PROY3",
+    title: "Catalofo de Frutas",
+    description: "Usando Reack de aplicacion de consumo de API que esta mostrando un catalogo de frutas.",
+    image: "/Frutas.jpg",
+    netlify: "https://visionary-lokum-be2eb1.netlify.app/",
+    github: "https://github.com/PerezAmnerJr/036-Amner-Perez.git",
     tags: ["CSS", "Responsive"]
   }
+];
+
+
+export const certifications = [
+  {
+    title: "Bibliotecas de desarrollo front-end",
+    issuer: "freeCodeCamp",
+    description:
+      "Certificación centrada en React, Redux, Bootstrap, jQuery y SASS, con proyectos prácticos.",
+    imageSrc: "/text/cert-fcc-frontend.jpg",      // preview
+    credentialUrl: "https://tu-link-del-diploma.com",  // diploma PDF o Drive
+    tags: ["React", "Redux", "Bootstrap", "SASS"],
+  },
+
+   {
+    title: "React y TypeScript desde cero",
+    issuer: "Udemy",
+    description:
+      "Curso completo de React con TypeScript, hooks, routers y buenas prácticas.",
+    imageSrc: "/text/cert-udemy-react.jpg",
+    credentialUrl: "https://tu-link-del-diploma.com",
+    tags: ["React", "TypeScript"],
+  },
 ];

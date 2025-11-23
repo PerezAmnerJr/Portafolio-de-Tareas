@@ -1,5 +1,6 @@
 import React from "react";
-import { projects } from "../data/projects";
+import { projects, certifications } from "../data/projects";
+
 
 const ExternalIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -74,5 +75,56 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
+{/* ================= CERTIFICACIONES ================= */}
+<section id="certificaciones" className="section reveal">
+  <div className="container">
+    <p className="section-title">CERTIFICACIONES</p>
+    <h2 style={{ marginBottom: 18 }}>Diplomas y Cursos</h2>
+
+    <div className="projects-grid-hero">
+      {certifications.map((c) => (
+        <article key={c.title} className="project-card-hero">
+          {/* Preview arriba */}
+          <div className="thumb-hero">
+            <img src={c.imageSrc} alt={c.title} />
+          </div>
+
+          {/* Panel abajo */}
+          <div className="panel-hero">
+            <div className="panel-head">
+              <div className="icon-wrap">🎓</div>
+              <div>
+                <h3 className="panel-title">{c.title}</h3>
+                <p className="panel-desc" style={{ marginTop: 4 }}>
+                  {c.issuer}
+                </p>
+              </div>
+            </div>
+
+            <p className="panel-desc">{c.description}</p>
+
+            <div className="tags">
+              {c.tags.map((t) => (
+                <span key={t} className="badge">{t}</span>
+              ))}
+            </div>
+
+            <div className="cta-row">
+              <a
+                href={c.credentialUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn--accent"
+              >
+                Ver Certificado
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
 
 

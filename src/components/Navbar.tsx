@@ -9,10 +9,10 @@ const Navbar: React.FC = () => {
           <span>Portafolio</span>
         </div>
         <nav className="nav">
-          <a href="#home">Home</a>
+          <a href="#home">Inicio</a>
           <a href="#projects">Proyectos</a>
-          <a href="#glosario">Glosario</a>
           <a href="#resume">Resume</a>
+          <a href="#certificaciones">Certificaciones</a>
         </nav>
       </div>
     </header>
