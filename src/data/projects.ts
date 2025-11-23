@@ -23,8 +23,8 @@ export const projects: Project[] = [
     title: "Formulario",
     description: "Formulario con validaciones y exportación.",
     image: "/Formulario.jpg",
-    netlify: "https://TU-FORM.netlify.app",
-    github: "https://github.com/TUUSER/TU-REPO-FORM",
+    netlify: "https://gregarious-haupia-733a27.netlify.app/",
+    github: "https://github.com/TUUSER/TU-REPO-FORMx",
     tags: ["TypeScript", "Forms"]
   },
   {
