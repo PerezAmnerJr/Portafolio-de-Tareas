@@ -1,6 +1,7 @@
+// portafoliotareas/src/components/Projects.tsx
 import React from "react";
-import { projects, certifications } from "../data/projects";
-
+import { projects } from "../data/projects";
+import { certifications } from "../data/certifications";
 
 const ExternalIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -27,104 +28,103 @@ const AtomIcon = () => (
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="section">
-      <div className="container">
-        <div className="section-title">Mis proyectos</div>
-        <h2 style={{ marginBottom: 18 }}>Lo que construí</h2>
+    <>
+      {/* ========== PROYECTOS ========= */}
+      <section id="projects" className="section">
+        <div className="container">
+          <div className="section-title">Mis proyectos</div>
+          <h2 style={{ marginBottom: 18 }}>Lo que construí</h2>
 
-        <div className="projects-grid-hero">
-          {projects.map(p => (
-            <article key={p.id} className="project-card-hero">
-              {/* Miniatura grande arriba */}
-              {p.image && (
-                <div className="thumb-hero">
-                  <img src={p.image} alt={`Vista previa de ${p.title}`} />
-                </div>
-              )}
-
-              {/* Panel inferior */}
-              <div className="panel-hero">
-                <div className="panel-head">
-                  <div className="icon-wrap"><AtomIcon /></div>
-                  <h3 className="panel-title">{p.title}</h3>
-                </div>
-
-                <p className="panel-desc">{p.description}</p>
-
-                {p.tags && (
-                  <div className="tags">
-                    {p.tags.map(t => <span key={t} className="badge">{t}</span>)}
+          <div className="projects-grid-hero">
+            {projects.map(p => (
+              <article key={p.id} className="project-card-hero">
+                {/* Miniatura grande arriba */}
+                {p.image && (
+                  <div className="thumb-hero">
+                    <img src={p.image} alt={`Vista previa de ${p.title}`} />
                   </div>
                 )}
 
-                <div className="cta-row">
-                  <a className="btn btn--accent" href={p.netlify} target="_blank" rel="noreferrer">
-                    <ExternalIcon /> <span>Ver en Netlify</span>
-                  </a>
-                  <a className="btn btn--ghost" href={p.github} target="_blank" rel="noreferrer">
-                    <GithubIcon /> <span>Ver en GitHub</span>
-                  </a>
+                {/* Panel inferior */}
+                <div className="panel-hero">
+                  <div className="panel-head">
+                    <div className="icon-wrap"><AtomIcon /></div>
+                    <h3 className="panel-title">{p.title}</h3>
+                  </div>
+
+                  <p className="panel-desc">{p.description}</p>
+
+                  {p.tags && (
+                    <div className="tags">
+                      {p.tags.map(t => <span key={t} className="badge">{t}</span>)}
+                    </div>
+                  )}
+
+                  <div className="cta-row">
+                    <a className="btn btn--accent" href={p.netlify} target="_blank" rel="noreferrer">
+                      <ExternalIcon /> <span>Ver en Netlify</span>
+                    </a>
+                    <a className="btn btn--ghost" href={p.github} target="_blank" rel="noreferrer">
+                      <GithubIcon /> <span>Ver en GitHub</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ================= CERTIFICACIONES ================= */}
+      <section id="certificaciones" className="section reveal">
+        <div className="container">
+          <p className="section-title">CERTIFICACIONES</p>
+          <h2 style={{ marginBottom: 18 }}>Diplomas y Cursos</h2>
+
+          <div className="projects-grid-hero">
+            {certifications.map((c) => (
+              <article key={c.title} className="project-card-hero">
+                {/* Preview arriba */}
+                <div className="thumb-hero">
+                  <img src={c.imageSrc} alt={c.title} />
+                </div>
+
+                {/* Panel abajo */}
+                <div className="panel-hero">
+                  <div className="panel-head">
+                    <div className="icon-wrap">🎓</div>
+                    <div>
+                      <h3 className="panel-title">{c.title}</h3>
+                      {c.issuer ? <p className="panel-desc" style={{ marginTop: 4 }}>{c.issuer}</p> : null}
+                    </div>
+                  </div>
+
+                  <p className="panel-desc">{c.description}</p>
+
+                  <div className="tags">
+                    {(c.tags || []).map((t) => (
+                      <span key={t} className="badge">{t}</span>
+                    ))}
+                  </div>
+
+                  <div className="cta-row">
+                    <a
+                      href={c.credentialUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn--accent"
+                    >
+                      Ver Certificado
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
 export default Projects;
-
-{/* ================= CERTIFICACIONES ================= */}
-<section id="certificaciones" className="section reveal">
-  <div className="container">
-    <p className="section-title">CERTIFICACIONES</p>
-    <h2 style={{ marginBottom: 18 }}>Diplomas y Cursos</h2>
-
-    <div className="projects-grid-hero">
-      {certifications.map((c) => (
-        <article key={c.title} className="project-card-hero">
-          {/* Preview arriba */}
-          <div className="thumb-hero">
-            <img src={c.imageSrc} alt={c.title} />
-          </div>
-
-          {/* Panel abajo */}
-          <div className="panel-hero">
-            <div className="panel-head">
-              <div className="icon-wrap">🎓</div>
-              <div>
-                <h3 className="panel-title">{c.title}</h3>
-                <p className="panel-desc" style={{ marginTop: 4 }}>
-                  {c.issuer}
-                </p>
-              </div>
-            </div>
-
-            <p className="panel-desc">{c.description}</p>
-
-            <div className="tags">
-              {c.tags.map((t) => (
-                <span key={t} className="badge">{t}</span>
-              ))}
-            </div>
-
-            <div className="cta-row">
-              <a
-                href={c.credentialUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn--accent"
-              >
-                Ver Certificado
-              </a>
-            </div>
-          </div>
-        </article>
-      ))}
-    </div>
-  </div>
-</section>
-
-
