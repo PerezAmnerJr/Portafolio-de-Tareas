@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       <div className="hero-card">
         <p className="hero-eyebrow">HOLA, SOY</p>
 
-        <h1>Ing. Amner Pérez</h1>
+        <h1>Amner Alberto Pérez Marroquin</h1>
         <h2>Desarrollador Frontend Junior</h2>
 
         <p className="hero-text">

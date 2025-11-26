@@ -39,5 +39,28 @@ export const projects: Project[] = [
     github: "https://github.com/PerezAmnerJr/036-Amner-Perez.git",
     tags: ["TypeScript", "Reack", "API"]
  
-  }
+  },
+    {
+    id: "p4",
+    title: "Consumo de API de Practica de Autos",
+    description:
+      "consumiendo una API publica de autos para mostrar un catálogo de vehículos.",
+    image: "pruebas-autos.jpg",
+    netlify: "https://practicaautos.netlify.app/",
+    github: "https://github.com/PerezAmnerJr/Practica-autos.git",
+    tags: ["React", "TypeScript", "Hooks"]
+  },
+
+  {
+    id: "p5",
+    title: "Practica de desarrollo de API de Tienda",
+    description:
+      "Consumiendo API de tienda, con usuario de estudiante de Universidad Mariano Galvez .",
+    image: "tienda-api.jpg",
+    netlify: "https://practicadesarrolloapi2.netlify.app/",
+    github: "https://github.com/PerezAmnerJr/Practica-desarrollo-2-de-API.git",
+    tags: ["React", "API", "Vite"]
+  },
+
+ 
 ];
